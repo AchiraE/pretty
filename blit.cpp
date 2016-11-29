@@ -8,7 +8,7 @@ void blit_test(){
 	blit_cdraw(ans);
 	blit_freeimg(a,b,frac,ans,0);
 }
-img* blit_createimg(int w, int h){//TODO -- handle 0,0 input for malloc(0) security issues
+img* blit_createimg(int w, int h){
 	return blit_createimg(w, h, 0);
 }
 img* blit_createimg(int w, int h, int base){

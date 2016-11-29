@@ -8,7 +8,6 @@ int main(){
 	//char str[]="x - x**3/6 + O(x**5)";
 	char str[100];
 	scanf("%s",str);
-	printf("%d\n",ttype('x'));
 	img* ans=parse(str);
 	blit_cdraw(ans);
 	blit_freeimg(ans);
@@ -30,7 +29,7 @@ int ttype(char c){
 img* parse(char* str){
 	int i,l;
 	img *final,*tmp_0, *tmp_1, *t, *_t;
-	final=blit_createimg(0,0);//TODO -- malloc(0)??
+	final=blit_createimg(0,0);
 	tmp_0=blit_createimg(0,0);
 	tmp_1=blit_createimg(0,0);
 	l=strlen(str);
